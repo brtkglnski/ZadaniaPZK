@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwersja</title>
+    <link rel="stylesheet" href="../PlikiCSS/podstrony.css">
+</head>
+<body>
+    <div class="formularzDanych">
+        <form>
+            <h1>Konwersja jednostek</h1>
+           <div class="formularzPole">
+            <select id="jednostka">
+                <option name="kilometr">kilometr</option>
+                <option name="metr">metr</option>
+                <option name="centymetr">centymetr</option>
+                <option name="milimetr">milimetr</option>
+            </select>
+           </div>
+           <div class="formularzPole">Wartość: <br><input id = "wartosc" type="number"></div>
+           <div class="formularzPrzyciski">
+            <button onclick="Konwersja(); return false;">Oblicz</button>
+           </div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik"></p>
+        </div>
+    </div>
+    <a class="Element" href="../index.html">Wróć</a>
+</body>
+<script src="../PlikiJS/konwersja.js"></script>
+</html>

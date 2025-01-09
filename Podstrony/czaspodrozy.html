@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czas podróży</title>
+    <link rel="stylesheet" href="../PlikiCSS/podstrony.css">
+</head>
+<body>
+    <div class="formularzDanych">
+        <form>
+            <h1>Czas podróży</h1>
+           <div class="formularzPole">Średnia prędkość (km/h): <br><input id = "s" type="number"></div>
+           <div class="formularzPole">Odległość do celu (km): <br><input id = "v" type="number"></div>
+           <div class="formularzPrzyciski">
+            <button onclick="CzasPodrozy(); return false;">Oblicz</button>
+        </div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik1"></p>
+        </div>
+    </div>
+    <div class="formularzDanych">
+        <form>
+            <h1>Średnia prędkość</h1>
+           <div class="formularzPole">Czas przejazdu: <br><input id = "t" type="number"></div>
+           <select id="jednostkaCzas">
+            <option name="h">h</option>
+            <option name="min">min</option>
+        </select>
+           <div class="formularzPole">Dystans: <br><input id = "v2" type="number"></div>
+           <select id="jednostkaDystans">
+            <option name="km">km</option>
+            <option name="m">m</option>
+        </select>
+           <div class="formularzPrzyciski">
+            <button onclick="Predkosc(); return false;">Oblicz</button>
+        </div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik2"></p>
+        </div>
+    </div>
+    <a class="Element" href="../index.html">Wróć</a>
+</body>
+<script src="../PlikiJS/czaspodrozy.js"></script>
+</html>

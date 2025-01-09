@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kroki</title>
+    <link rel="stylesheet" href="../PlikiCSS/podstrony.css">
+</head>
+<body>
+    <div class="formularzDanych">
+        <form>
+            <h1>Ilość kroków</h1>
+           <div class="formularzPole">Długość kroku (centymetry): <br><input id = "dlugoscKroku" type="number"></div>
+           <div class="formularzPole">Odległość (metry): <br><input id = "odleglosc" type="number"></div>
+           <div class="formularzPrzyciski">
+            <button onclick="IloscKrokow(); return false;">Oblicz</button>
+        </div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik1"></p>
+        </div>
+    </div>
+    <div class="formularzDanych">
+        <form>
+            <h1>Odległość</h1>
+           <div class="formularzPole">Długość kroku (centymetry): <br><input id = "dlugoscKroku2" type="number"></div>
+           <div class="formularzPole">Ilość kroków: <br><input id = "iloscKrokow2" type="number"></div>
+           <div class="formularzPrzyciski">
+            <button onclick="Odleglosc(); return false;">Oblicz</button>
+        </div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik2"></p>
+        </div>
+    </div>
+    <div class="formularzDanych">
+        <form>
+            <h1>Długość kroków</h1>
+           <div class="formularzPole">Odległość (metry): <br><input id = "odleglosc3" type="number"></div>
+           <div class="formularzPole">Ilość kroków: <br><input id = "iloscKrokow3" type="number"></div>
+           <div class="formularzPrzyciski">
+            <button onclick="DlugoscKrokow(); return false;">Oblicz</button>
+        </div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik3"></p>
+        </div>
+    </div>
+    <a class="Element" href="../index.html">Wróć</a>
+</body>
+<script src="../PlikiJS/kroki.js"></script>
+</html>

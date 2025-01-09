@@ -1,0 +1,40 @@
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainGrid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width:80%;
+    height:90vh;
+    margin:4% 10% 1% 10%;
+}
+img{
+    width: auto;
+    height: 20vh;
+}
+.Element{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 100, 100);
+    margin: 12%;
+    border-radius: 4vh;
+    box-shadow: 0px 10px 0px rgb(122, 122, 122);
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}

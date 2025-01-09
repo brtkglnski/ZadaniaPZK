@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prostokąt</title>
+    <link rel="stylesheet" href="../PlikiCSS/podstrony.css">
+</head>
+<body>
+    <div class="formularzDanych">
+        <form>
+            <h1>Obliczanie pola i obwodu prostokątu</h1>
+           <div class="formularzPole">Pierwsza wartość: <br><input id = "a" type="number"></div>
+           <div class="formularzPole">Druga wartość: <br><input id = "b" type="number"></div>
+           <div class="formularzPrzyciski"><button onclick="Pole(); return false;">Pole</button>
+            <button onclick="Obwod(); return false;">Obwód</button></div>
+        </form>
+        <div class="poleWyniku">
+            <p id="wynik"></p>
+        </div>
+        
+    </div>
+    <a class="Element" href="../index.html">Wróć</a>
+</body>
+<script src="../PlikiJS/prostokat.js"></script>
+</html>
